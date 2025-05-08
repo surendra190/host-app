@@ -5,8 +5,8 @@ const {
 
 module.exports = withModuleFederationPlugin({
   remotes: {
-    mfe1: "mfe1@http://localhost:4001/remoteEntry.js",
-    mfe2: "mfe2@http://localhost:4002/remoteEntry.js",
+    mfe1: "mfe1@https://mfe1-azure.vercel.app/remoteEntry.js",
+    mfe2: "mfe2@https://mfe2-delta.vercel.app/remoteEntry.js",
   },
 
   shared: {
