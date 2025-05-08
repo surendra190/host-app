@@ -9,7 +9,7 @@ export const routes: Routes = [
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4001/remoteEntry.js',
+        remoteEntry: 'https://mfe1-azure.vercel.app/remoteEntry.js',
         exposedModule: './Component',
       }).then((m) => m.Mfe1Component),
   },
@@ -18,7 +18,7 @@ export const routes: Routes = [
     loadComponent: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:4002/remoteEntry.js',
+        remoteEntry: 'https://mfe2-delta.vercel.app/remoteEntry.js',
         exposedModule: './Component',
       }).then((m) => m.Mfe2Component),
   },
